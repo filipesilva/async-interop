@@ -1,13 +1,9 @@
 {:builds
-   {:app
-      {:asset-path "/js",
-       :modules {:main {:init-fn app.core/main}},
-       :output-dir "public/js",
-       :target :browser},
-    :e2e {:ns-regexp "e2e.*", :output-to "out/e2e.js", :target :node-test},
-    :test
-      {:ns-regexp "app.*-spec$", :output-to "out/test.js", :target :node-test}},
- :dependencies [[reagent "0.8.1"]],
- :dev-http {3000 "public"},
- :nrepl {:port 3333},
- :source-paths ["src" "e2e"]}
+ {:test
+  {:ns-regexp "async-interop.*-tests$"
+   :output-to "out/test.js"
+   :target :node-test
+   :autorun true}}
+ :dependencies [[org.clojure/core.async "0.4.500"]]
+ :nrepl {:port 3333}
+ :source-paths ["src/main" "src/test"]}
