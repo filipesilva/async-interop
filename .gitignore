@@ -1,6 +1,7 @@
 node_modules
 public/js
 out
+target
 .shadow-cljs
 .nrepl-port
 .clj-kondo

@@ -20,7 +20,19 @@ candidate for the `core.async.interop` namespace along with a post on the topic.
 
 Meanwhile I'm putting this repository up with some tests and what I imagine could be a guide in
 https://clojurescript.org/guides/ (except for this "Notes" section). 
+You can also get it on https://clojars.org/async-interop:
 
+[source,clojure]
+----
+ :dependencies [[org.clojure/core.async "0.4.500"]
+                [async-interop "0.1.0"]],
+----
+[source,clojure]
+----
+  (:require
+   [cljs.core.async :refer [go]]
+   [async-interop.interop :refer-macros [<p!]])
+----
 
 [[using-javascript-promises-directly]]
 == Using JavaScript promises directly
