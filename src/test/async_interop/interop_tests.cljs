@@ -104,3 +104,11 @@
              (swap! total + second-res)
              (is (= @total 11))
              (done)))))
+
+(deftest interop-multiple-consumer
+  (async done
+         (go
+          (let [p (js/Promise.resolve 42)]
+            (is (= (<p! p) 42))
+            (is (= (<p! p) 42))
+            (done)))))
