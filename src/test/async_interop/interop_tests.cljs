@@ -75,9 +75,21 @@
          (let [err (js/Error. "Rejected")]
            (go
              (is (= err
-                    (is (thrown?
-                         js/Error
-                         (<p! (js/Promise.reject err))))))
+                    (ex-cause 
+                     (is (thrown?
+                          js/Error
+                          (<p! (js/Promise.reject err)))))))
+             (done)))))
+
+(deftest interop-catch-non-error
+  (async done
+         (let [err "Rejected"]
+           (go
+             (is (= err
+                    (ex-cause
+                     (is (thrown?
+                          js/Error
+                          (<p! (js/Promise.reject err)))))))
              (done)))))
 
 (deftest interop-nested

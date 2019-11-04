@@ -149,7 +149,7 @@ asynchronous, exactly like `await` and `async` do in JavaScript.
     (try
       (<p! (.goto page "https://clojure.org"))
       (<p! (.screenshot page #js{:path "screenshot.png"}))
-      (catch js/Error err (js/console.log err)))
+      (catch js/Error err (js/console.log (ex-cause err))))
     (.close browser)))
 ----
 

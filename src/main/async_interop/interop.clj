@@ -6,5 +6,5 @@
      (if (and 
           (instance? cljs.core/ExceptionInfo v#)
           (= (:error (ex-data v#)) :promise-error))
-       (throw (ex-cause v#))
+       (throw v#)
        v#)))
