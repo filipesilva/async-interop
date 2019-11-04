@@ -60,6 +60,12 @@
            (is (= (<p! (js/Promise.resolve 42)) 42))
            (done))))
 
+(deftest interop-resolve-nil
+  (async done
+         (go
+           (is (= (<p! (js/Promise.resolve)) nil))
+           (done))))
+
 (deftest interop-multiple-resolve
   (async done
          (go
