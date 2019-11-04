@@ -1,7 +1,7 @@
 (ns async-interop.interop-tests
   (:require
-   [cljs.core.async :refer [go]]
-   [async-interop.interop :refer-macros [<p!]]
+   [cljs.core.async :refer [go <!]]
+   [async-interop.interop :refer [p->c] :refer-macros [<p!]]
    [cljs.test :refer-macros [deftest is async]]))
 
 ; Native JS promise tests
@@ -112,3 +112,11 @@
             (is (= (<p! p) 42))
             (is (= (<p! p) 42))
             (done)))))
+
+(deftest interop-p->c-semantics
+  (async done
+         (go
+           (let [c (p->c (js/Promise.resolve 42))]
+             (is (= (<! c) 42))
+             (is (= (<! c) 42))
+             (done)))))

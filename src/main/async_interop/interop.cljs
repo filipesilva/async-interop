@@ -1,9 +1,9 @@
 (ns async-interop.interop
-  (:require [cljs.core.async :refer [chan close! put!]]))
+  (:require [cljs.core.async :refer [promise-chan close! put!]]))
 
 (defn p->c
   [p]
-  (let [c (chan)]
+  (let [c (promise-chan)]
     (.then p
            (fn [res]
              (if (nil? res)
