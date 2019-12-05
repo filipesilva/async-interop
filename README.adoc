@@ -18,6 +18,8 @@ where it was noted that questions about promises were a recurring topic.
 David Nolen provided a macro (provided here almost verbatim) and remarked that it could be a
 candidate for the `core.async.interop` namespace along with a post on the topic.
 
+This proposal is being tracked in https://clojure.atlassian.net/browse/ASYNC-230.
+
 Meanwhile I'm putting this repository up with some tests and what I imagine could be a guide in
 https://clojurescript.org/guides/ (except for this "Notes" section). 
 You can also get it on https://clojars.org/async-interop:
