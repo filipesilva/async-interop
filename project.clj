@@ -1,4 +1,4 @@
-(defproject async-interop "0.1.2"
+(defproject async-interop "0.1.3"
   :description "Promise interop for core.async"
   :url "https://github.com/filipesilva/async-interop"
   :license {:name "MIT"

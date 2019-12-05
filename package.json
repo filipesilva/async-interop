@@ -1,12 +1,13 @@
 {
   "name": "async-interop",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "scripts": {
     "scljs": "shadow-cljs",
     "test": "shadow-cljs watch test",
     "test:once": "shadow-cljs compile test --config-merge \"{:autorun false}\" && node out/test.js",
-    "lint": "clj-kondo --lint src"
+    "lint": "clj-kondo --lint src",
+    "clojars": "lein deploy clojars"
   },
   "devDependencies": {
     "clj-kondo": "2019.10.11-alpha.1",

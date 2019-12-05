@@ -3,7 +3,7 @@
   <groupId>async-interop</groupId>
   <artifactId>async-interop</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.2</version>
+  <version>0.1.3</version>
   <name>async-interop</name>
   <description>Promise interop for core.async</description>
   <url>https://github.com/filipesilva/async-interop</url>
@@ -17,7 +17,7 @@
     <url>https://github.com/filipesilva/async-interop</url>
     <connection>scm:git:git://github.com/filipesilva/async-interop.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/filipesilva/async-interop.git</developerConnection>
-    <tag>bbb773b37bed2064d66e1d3a6fcc846054c20788</tag>
+    <tag>1966f2eb04d2bce457374a73b48065295b3f522f</tag>
   </scm>
   <build>
     <sourceDirectory>src\main</sourceDirectory>
