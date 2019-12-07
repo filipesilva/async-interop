@@ -1,7 +1,7 @@
 (ns async-interop.interop-tests
   (:require
    [cljs.core.async :refer [go <!]]
-   [async-interop.interop :refer [p->c] :refer-macros [<p!]]
+   [async-interop.interop :refer [p->c <p!]]
    [cljs.test :refer-macros [deftest is async]]))
 
 ; Native JS promise tests

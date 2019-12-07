@@ -1,4 +1,5 @@
 (ns async-interop.interop
+  (:require-macros [async-interop.interop])
   (:require [cljs.core.async :as async]))
 
 (defn p->c

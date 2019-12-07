@@ -33,7 +33,7 @@ You can also get it on https://clojars.org/async-interop:
 ----
   (:require
    [cljs.core.async :refer [go]]
-   [async-interop.interop :refer-macros [<p!]])
+   [async-interop.interop :refer [<p!]])
 ----
 
 [[using-javascript-promises-directly]]
