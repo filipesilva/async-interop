@@ -27,7 +27,7 @@ You can also get it on https://clojars.org/async-interop:
 [source,clojure]
 ----
  :dependencies [[org.clojure/core.async "0.4.500"]
-                [async-interop "0.1.3"]],
+                [async-interop "0.1.4"]],
 ----
 [source,clojure]
 ----
