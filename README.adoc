@@ -1,3 +1,7 @@
+= Current status
+
+Merged into CLJS, please refer to https://clojurescript.org/guides/promise-interop for the official guide.
+
 = Promise interop
 Filipe Silva
 2019-10-03
